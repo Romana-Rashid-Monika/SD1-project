@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel Website</title>
+
+    <!-- css link  -->
+    <link rel="stylesheet" type="text/css" href="package.css">
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+  
+    <!-- favicon link -->
+    <link rel="shortcut icon" href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQvE3FhQATX8Fsdz6dADw3NFT1MDNOgih8ZIQ&s" type="image/x-icon">
+
+    <!-- DaisyUi Tailwind link  -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <script>
+        tailwind.config = {
+          theme: {
+            extend: {
+              colors: {
+                primary: '#01453f',
+                'txt-primary': 'white',
+              }
+            }
+          }
+        }
+      </script>
+
+</head>
+<body><!-- header -->
+
+    <header class="sticky">
+           <div>
+               <img class="w-70" src="images/logo.png" alt="">
+           </div>
+           <div class="bx bx-menu" id="menu-icon"></div>
+   
+           <ul class="navbar">
+               <li><a href="demo.html">Home</a></li>
+               <li><a href="package.html">Package</a></li>
+               <li><a href="#Booking">Booking</a></li>
+               <li><a href="#destination">Destination</a></li>
+           </ul>
+           <ul id="nav-bar" class="flex justify-end gap-4">
+               <li class="navbar"><a href="login.html"><button >Login</button></a></li>
+               <li class="navbar"><a href="signup.html"><button>SignUp</button></a></li>
+             </ul>
+   
+                 </div>
+   </header>
+    <!-- Package section -->
+  <section class="package" id="package">
+    <div class="title">
+        <h2>Our Upcoming<br>Tour Package</h2>
+    </div>
+    <div class="package-content">
+        <div class="box">
+            <div class="thum"><img src="images/sundorbon.jpg" >
+            <h3>$499</h3>
+            </div>
+            <div class="dest-content">
+                <div class="location">
+                    <h4>Sundarban</h4>
+                    <p>4h - 5h</p>
+                </div>
+                <div class="stars">
+                    <a href="#"><i class='bx bxs-star'></i></a>
+                    <a href="#"><i class='bx bxs-star'></i></a>
+                    <a href="#"><i class='bx bxs-star'></i></a>
+                    <a href="#"><i class='bx bxs-star'></i></a>
+                    <a href="#"><i class='bx bxs-star'></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="box">
+            <div class="thum"><img src="images/haor.jpg" width="640">
+            <h3>$499</h3>
+            </div>
+            <div class="dest-content">
+                <div class="location">
+                    <h4>Tanguar Haor</h4>
+                    <p>4h - 5h</p>
+                </div>
+                <div class="stars">
+                    <a href="#"><i class='bx bxs-star'></i></a>
+                    <a href="#"><i class='bx bxs-star'></i></a>
+                    <a href="#"><i class='bx bxs-star'></i></a>
+                    <a href="#"><i class='bx bxs-star'></i></a>
+                    <a href="#"><i class='bx bxs-star'></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="box">
+            <div class="thum"><img src="images/saintmartin.avif" width="640" >
+            <h3>$499</h3>
+            </div>
+            <div class="dest-content">
+                <div class="location">
+                    <h4>Saint Martin</h4>
+                    <p>4h - 5h</p>
+                </div>
+                <div class="stars">
+                    <a href="#"><i class='bx bxs-star'></i></a>
+                    <a href="#"><i class='bx bxs-star'></i></a>
+                    <a href="#"><i class='bx bxs-star'></i></a>
+                    <a href="#"><i class='bx bxs-star'></i></a>
+                    <a href="#"><i class='bx bxs-star'></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+  </section>
+</body>
+<!-- Footer Section  -->
+<footer class="footer bg-black text-[#FFFFFF99] py-10 items-center justify-around mt-10">
+    <div>
+        <div class="logo flex gap-3 items-center mb-3">
+            <img class="w-40 h-20" src="images/logo.png">
+        </div>
+      <a class="link link-hover">Location: cantonment, Bayezid, Chattogram</a>
+      <a class="link link-hover">Phone: 01846152387</a>
+      <a class="link link-hover">Email: maimunarashid211@gmail.com</a>
+      <a class="link link-hover">Openings hours: 9.00 AM - 5.00 PM</a>
+      <div class="flex gap-3">
+        <a href=""><img class="w-10" src="https://img.icons8.com/?size=48&id=uLWV5A9vXIPu&format=png"> </a>
+        <a href=""><img class="w-10" src="images/twitter-logo-png.png"> </a>
+        <a href=""><img class="w-10" src="https://img.icons8.com/?size=48&id=19318&format=png"> </a>
+        <a href=""><img class="w-10" src="https://img.icons8.com/?size=48&id=Xy10Jcu1L2Su&format=png"> </a>
+      </div>
+    </div>
+    <div>
+      <h6 class="text-xl font-bold text-[#FFFFFFE6] mb-3">Useful Links</h6>
+      <a class="link link-hover">Home</a>
+      <a class="link link-hover">About us</a>
+      <a class="link link-hover">Contact</a>
+    </div>
+    <div>
+      <h6 class="text-xl font-bold text-[#FFFFFFE6]  mb-3">Drop a Message</h6>
+      <input type="email" placeholder="Enter your email" class="text-black w-44 px-2 py-2 rounded-lg bg-[#FFFFFF33]">
+      <button class="text-white font-bold bg-[#0E7A81] w-44 px-8 py-2 rounded-lg">Subscribe</button>
+    </div>
+</footer>
+</html>

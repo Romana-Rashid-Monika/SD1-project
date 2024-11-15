@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel Website</title>
+
+    <!-- css link  -->
+    <link rel="stylesheet" type="text/css" href="demo.css">
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+  
+    <!-- favicon link -->
+    <link rel="shortcut icon" href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQvE3FhQATX8Fsdz6dADw3NFT1MDNOgih8ZIQ&s" type="image/x-icon">
+
+    <!-- DaisyUi Tailwind link  -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <script>
+        tailwind.config = {
+          theme: {
+            extend: {
+              colors: {
+                primary: '#01453f',
+                'txt-primary': 'white',
+              }
+            }
+          }
+        }
+      </script>
+
+</head>
+<body>
+<!-- header -->
+
+ <header class="sticky">
+        <div>
+            <img class="w-70" src="images/logo.png" alt="">
+        </div>
+        <div class="bx bx-menu" id="menu-icon"></div>
+
+        <ul class="navbar">
+            <li><a href="demo.html">Home</a></li>
+            <li><a href="package.html">Package</a></li>
+            <li><a href="#Booking">Booking</a></li>
+            <li><a href="#destination">Destination</a></li>
+        </ul>
+        <ul id="nav-bar" class="flex justify-end gap-4">
+            <li class="navbar"><a href="login.html"><button >Login</button></a></li>
+            <li class="navbar"><a href="signup.html"><button>SignUp</button></a></li>
+          </ul>
+
+              </div>
+</header>
+<!-- home section -->
+ <section class="home" id="home">
+    <video class="vedio-slide active" src="images/1.mp4" autoplay muted loop></video>
+    <video class="vedio-slide" src="images/2.mp4" autoplay muted loop></video>
+    <video class="vedio-slide" src="images/3.mp4" autoplay muted loop></video>
+    <video class="vedio-slide" src="images/1.mp4" autoplay muted loop></video>
+    <video class="vedio-slide" src="images/1.mp4" autoplay muted loop></video>
+    <div class="content active">
+        <h1>Wonderful<br>Saint Martin</h1>
+        <p>Enthusiastically extend extensive customer service before<br>
+        best breed convergence completely.</p>
+        <a href="#" class="home-btn">Let's go now</a>
+        <div class="header-form">
+            <h3>Choose Your Details</h3>
+            <form class="flex">
+                <input type="text" class="form-control" placeholder="Destination Name">
+                <input onfocus="this.type='date'" class="form-control" placeholder="When">
+                <input type="number" class="form-control" placeholder="Guest">
+                <input type="number" class="form-control" placeholder="Price ($)">
+                <button class="btn" style="background-color: rgb(123, 232, 215); border: #fff; font-size: large;">Search</button>
+            </form>
+        </div>
+    </div>
+    <div class="content">
+      <h1>Fuel Mind<br>Travel</h1>
+      <p>Enthusiastically extend extensive customer service before<br>
+      best breed convergence completely.</p>
+      <a href="#" class="home-btn">Let's go now</a>
+    </div>
+    <div class="content">
+     <h1>Fuel Mind<br>Travel</h1>
+     <p>Enthusiastically extend extensive customer service before<br>
+     best breed convergence completely.</p>
+     <a href="#" class="home-btn">Let's go now</a>
+    </div>
+    <div class="content">
+     <h1>Fuel Mind<br>Travel</h1>
+     <p>Enthusiastically extend extensive customer service before<br>
+     best breed convergence completely.</p>
+     <a href="#" class="home-btn">Let's go now</a>
+    </div>
+<div class="content">
+  <h1>Fuel Mind<br>Travel</h1>
+  <p>Enthusiastically extend extensive customer service before<br>
+  best breed convergence completely.</p>
+  <a href="#" class="home-btn">Let's go now</a>
+</div>
+    <div class="slider-navigation">
+      <div class="nav-btn active"></div>
+      <div class="nav-btn"></div>
+      <div class="nav-btn"></div>
+      <div class="nav-btn"></div>
+      <div class="nav-btn"></div>
+    </div>
+ </section>
+<!-- container -->
+ <section class="container">
+    <div class="text">
+        <h2>Start Your Vacation <br> with Lots of Services!</h2>
+    </div>
+    <div class="row-items">
+        <div class="container-box">
+            <div class="container-img">
+                <img src="images/trip1.png">
+            </div>
+            <h4>Ship Cruises</h4>
+            <p>150 Properties</p>
+        </div>
+
+        <div class="container-box">
+            <div class="container-img">
+                <img src="images/trip2.png">
+            </div>
+            <h4>Food Tours</h4>
+            <p>150 Properties</p>
+        </div>
+
+        <div class="container-box">
+            <div class="container-img">
+                <img src="images/trip3.png">
+            </div>
+            <h4>Summer Rest</h4>
+            <p>150 Properties</p>
+        </div>
+
+        <div class="container-box">
+            <div class="container-img">
+                <img src="images/trip4.png">
+            </div>
+            <h4>Mountains tours</h4>
+            <p>150 Properties</p>
+        </div>
+
+    </div>
+ </section>  
+
+    <!-- link to js -->
+     <script type="text/javascript" src="script.js"></script>
+</body>
+
+ <!-- Footer Section  -->
+ <footer class="footer bg-black text-[#FFFFFF99] py-10 items-center justify-around mt-10">
+    <div>
+        <div class="logo flex gap-3 items-center mb-3">
+            <img class="w-40 h-20" src="images/logo.png">
+        </div>
+      <a class="link link-hover">Location: cantonment, Bayezid, Chattogram</a>
+      <a class="link link-hover">Phone: 01846152387</a>
+      <a class="link link-hover">Email: maimunarashid211@gmail.com</a>
+      <a class="link link-hover">Openings hours: 9.00 AM - 5.00 PM</a>
+      <div class="flex gap-3">
+        <a href=""><img class="w-10" src="https://img.icons8.com/?size=48&id=uLWV5A9vXIPu&format=png"> </a>
+        <a href=""><img class="w-10" src="images/twitter-logo-png.png"> </a>
+        <a href=""><img class="w-10" src="https://img.icons8.com/?size=48&id=19318&format=png"> </a>
+        <a href=""><img class="w-10" src="https://img.icons8.com/?size=48&id=Xy10Jcu1L2Su&format=png"> </a>
+      </div>
+    </div>
+    <div>
+      <h6 class="text-xl font-bold text-[#FFFFFFE6] mb-3">Useful Links</h6>
+      <a class="link link-hover">Home</a>
+      <a class="link link-hover">About us</a>
+      <a class="link link-hover">Contact</a>
+    </div>
+    <div>
+      <h6 class="text-xl font-bold text-[#FFFFFFE6]  mb-3">Drop a Message</h6>
+      <input type="email" placeholder="Enter your email" class="text-black w-44 px-2 py-2 rounded-lg bg-[#FFFFFF33]">
+      <button class="text-white font-bold bg-[#0E7A81] w-44 px-8 py-2 rounded-lg">Subscribe</button>
+    </div>
+</footer>
+</html>

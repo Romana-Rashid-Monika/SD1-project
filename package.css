@@ -1,0 +1,133 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+    text-decoration: none;
+    list-style: none;
+    scroll-behavior: smooth;
+}
+:root{
+    --bg-color : #fff;
+    --text-color : #221314;
+    --second-color : #5a7184;
+    --main-color : #6e54fa;
+    --big-font : 6rem;
+    --h2-font : 3rem;
+    --p-font : 1.1rem;
+}
+body{
+    background: var(--bg-color);
+    color: var(--text-color);
+}
+header{
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 100%;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: transparent;
+    padding: 30px 18%;
+    transition: ease .40s;
+}
+.navbar{
+    display: flex;
+}
+.navbar a{
+    color: #fff;
+    font-size: var(--p-font);
+    font-weight: 500;
+    padding: 10px 22px;
+    border-radius: 4px;
+    transition: ease .40s;
+}
+.navbar a:hover{
+    background: var(--bg-color);
+    color: var(--text-color);
+    box-shadow: 5px 10px 30px rgb(85 85 85 / 20%);
+    border-radius: 4px;
+}
+#menu-icon{
+    color: var(--text-color);
+    font-size: 35px;
+    z-index: 10001;
+    cursor: pointer;
+    display: none;
+}
+section{
+    padding: 80px 18%;
+}
+header.sticky{
+    background: #01453f;
+    padding: 10px 10%;
+    box-shadow: rgba(33,35,38,0.1) 0px 10px 10px -10px;
+    color: #fff;
+}
+
+header.sticky a:hover{
+    background: white;
+    color: #01453f;
+    padding: 5px 12px;
+    border-radius: 5px;
+}
+.title{
+    text-align: center;
+}
+.title h2{
+    font-size: var(--h2-font);
+    line-height: 1.2;
+}
+.package-content{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(200px,auto));
+    grid-gap: 2rem;
+    text-align: center;
+    margin-top: 5rem;
+}
+.thum{
+    position: relative;
+    transition: all .3s cubic-bezier(.445,.05,.55,.95);
+    will-change: filter;
+    cursor: pointer;
+}
+.thum img{
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+.thum h3{
+    position: absolute;
+    font-size: 30px;
+    font-weight: 600;
+    text-align: right;
+    color: var(--bg-color);
+    top: 36px;
+    right: 40px;
+}
+.dest-content{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 24px;
+}
+.stars i{
+    color: var(--main-color);
+    font-size: 20px;
+}
+.location h4{
+    font-size: 24px;
+    font-weight: 600;
+    margin-bottom: 8px;
+}
+.location p{
+    font-size: 15px;
+    color: var(--second-color);
+}
+.thum:hover{
+    filter: brightness(100%) hue-rotate(45deg);
+    transform: scale(1.04);
+}
